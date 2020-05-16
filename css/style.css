@@ -1,11 +1,66 @@
+/* Normalize */
 * {
   margin: 0;
   padding: 0;
 }
-p {
-  float: right;
+
+/* Principal Page */
+
+main {
+  display: flex;
+  flex: 1;
 }
-img {
-  height: 100%;
-  position: fixed;
+
+#cc-button {
+  cursor: pointer;
+  width: 48px;
+  height: 36px;
+  background-color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+  order: 1;
+  margin-top: 150px;
+  margin-right: 40px;
+  border-color: #707070;
+}
+
+#img-principal {
+  height: 100vh;
+}
+
+#scroll-smooth {
+  position: absolute;
+  align-self: flex-end;
+  margin-left: 650px;
+}
+
+#scroll-smooth img {
+  max-width: 100px;
+  max-height: 80px;
+}
+
+#header {
+  align-self: center;
+  margin-bottom: 60px;
+}
+
+#header h1 {
+  text-align: center;
+  font-family: garamond, serif;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+#header p {
+  font-family: garamond, serif;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+#header quote {
+  font-family: garamond, serif;
+  font-size: 32px;
+  font-style: italic;
 }
