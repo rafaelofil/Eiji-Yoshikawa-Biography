@@ -102,6 +102,34 @@ main {
   font-style: italic;
 }
 
+/* Text parte 1 */
+p {
+  margin-bottom: 20px;
+}
+
+.text,
+dd {
+  margin: 0 auto;
+  max-width: 665px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+}
+
+.emphasis {
+  padding-top: 0;
+  margin-right: 12px;
+  line-height: 0.83;
+  font-size: 4.125rem;
+  float: left;
+  position: relative;
+  display: block;
+  box-sizing: inherit;
+}
+
 @media only screen and (min-width: 788px) and (max-width: 982px) {
   /* Principal Page */
   main {
@@ -150,13 +178,9 @@ main {
     order: 0;
     align-self: start;
     padding: 0;
-    margin-top: 150px;
+    margin-top: 140px;
     margin-left: 20px;
     margin-right: -20px;
-  }
-
-  #header {
-    margin-right: 20px;
   }
 
   #header h1 {
@@ -174,5 +198,11 @@ main {
   #header quote {
     font-size: 2rem;
     font-style: italic;
+  }
+  /* Text */
+  .text,
+  dd {
+    font-size: 1.3rem;
+    line-height: 2.1rem;
   }
 }
