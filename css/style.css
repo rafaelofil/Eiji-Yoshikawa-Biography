@@ -16,7 +16,7 @@ button {
 }
 
 body {
-  font-family: Garamond, serif;
+  font-family: Garamond, 'EB Garamond', serif;
 }
 
 dd {
@@ -110,13 +110,14 @@ p {
 .text,
 dd {
   margin: 0 auto;
-  max-width: 665px;
+  max-width: 680px;
   display: flex;
   flex-direction: column;
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 2.1rem;
+  padding: 0 16px;
 }
 
 #intro {
@@ -127,7 +128,7 @@ dd {
   padding-top: 0;
   margin-right: 12px;
   line-height: 0.83;
-  font-size: 4.125rem;
+  font-size: 3.9rem;
   float: left;
   position: relative;
   display: block;
