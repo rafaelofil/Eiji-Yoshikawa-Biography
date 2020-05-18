@@ -113,10 +113,14 @@ dd {
   max-width: 665px;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 1.5rem;
   line-height: 2.1rem;
+}
+
+#intro {
+  margin-top: 35px;
 }
 
 .emphasis {
@@ -155,6 +159,33 @@ footer {
   padding-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.25rem;
+}
+
+.accordion-list h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.line-separator {
+  height: 1px;
+  background: #000000;
+  border-bottom: 4px solid #313030;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.accordion-list dt {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  max-width: 665px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  align-content: center;
 }
 
 @media only screen and (min-width: 788px) and (max-width: 982px) {
@@ -235,5 +266,11 @@ footer {
   dd {
     font-size: 1.3rem;
     line-height: 2.1rem;
+  }
+
+  .line-separator {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    max-width: 80px;
   }
 }
