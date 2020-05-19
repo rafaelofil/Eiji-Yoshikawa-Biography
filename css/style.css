@@ -16,7 +16,7 @@ button {
 }
 
 body {
-  font-family: Garamond, 'EB Garamond', serif;
+  font-family: Garamond, "EB Garamond", serif;
 }
 
 dd {
@@ -162,6 +162,35 @@ footer {
   line-height: 1.25rem;
 }
 
+/* Accordion-List */
+[data-anime="accordion"] dt::before {
+  content: "+";
+}
+
+[data-anime="accordion"] dt.active::before {
+  content: "-";
+}
+
+[data-anime="accordion"] dd {
+  display: none;
+}
+
+[data-anime="accordion"] dd.active {
+  display: block;
+  animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 650px;
+    opacity: 1;
+  }
+}
+
 .accordion-list h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
@@ -193,7 +222,6 @@ footer {
   cursor: pointer;
   align-content: center;
 }
-
 @media only screen and (min-width: 788px) and (max-width: 982px) {
   /* Principal Page */
   main {
