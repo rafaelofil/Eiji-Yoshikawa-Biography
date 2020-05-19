@@ -57,6 +57,7 @@ main {
 }
 
 #scroll-smooth {
+  cursor: pointer;
   position: absolute;
   align-self: flex-end;
   left: 50%;
@@ -120,8 +121,8 @@ dd {
   padding: 0 16px;
 }
 
-#intro {
-  margin-top: 35px;
+#paragraph-intro {
+  margin-top: 32px;
 }
 
 .emphasis {
