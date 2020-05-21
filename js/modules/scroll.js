@@ -4,12 +4,12 @@ export default function initScroll() {
   const buttonScroll = document.getElementById("scroll-smooth");
   let scrollToDown = false;
 
-  AddScrollEvent(() => {
+  function AddScrollEvent() {
     window.addEventListener("scroll", directionScroll);
-  });
-  RemoveScrollEvent(() => {
+  }
+  function RemoveScrollEvent() {
     window.removeEventListener("scroll", directionScroll);
-  });
+  }
   buttonScroll.addEventListener("click", scrollToIntro);
 
   function directionScroll() {
@@ -50,4 +50,6 @@ export default function initScroll() {
       AddScrollEvent();
     }, 850);
   }
+
+  AddScrollEvent();
 }
