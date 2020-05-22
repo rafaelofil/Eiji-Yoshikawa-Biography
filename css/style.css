@@ -67,6 +67,7 @@ main {
   from {
     opacity: 0;
     transform: translate3d(30px, 0, 0);
+    behavior: "smooth";
   }
   to {
     opacity: 1;
@@ -256,6 +257,19 @@ footer {
 
 #open-dt {
   margin-top: 1rem;
+}
+
+/* Scroll Animation */
+
+[data-anime="scroll"] {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 1s;
+}
+
+[data-anime="scroll"].active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
 
 @media only screen and (min-width: 788px) and (max-width: 982px) {
