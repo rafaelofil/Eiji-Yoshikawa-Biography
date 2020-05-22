@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Garamond, "EB Garamond", serif;
+}
+
+dd {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  border-style: none;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}

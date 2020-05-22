@@ -1,0 +1,62 @@
+[data-anime="accordion"] dt::before {
+  content: "► ";
+}
+
+[data-anime="accordion"] dt.active::before {
+  content: "▼";
+}
+
+[data-anime="accordion"] dd {
+  display: none;
+}
+
+[data-anime="accordion"] dd.active {
+  display: block;
+  animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 650px;
+    opacity: 1;
+  }
+}
+
+.accordion-list h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.line-separator {
+  height: 1px;
+  background: #000000;
+  border-bottom: 4px solid #313030;
+  max-width: 180px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.accordion-list hr {
+  max-width: 665px;
+}
+
+.accordion-list dt {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  max-width: 680px;
+  cursor: pointer;
+  align-content: center;
+}
+
+#open-dt {
+  margin-top: 1rem;
+}

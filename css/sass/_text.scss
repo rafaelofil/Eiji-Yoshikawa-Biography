@@ -1,0 +1,42 @@
+/* Text parte 1 */
+p {
+  margin-bottom: 1rem;
+}
+
+dt {
+  padding: 0 16px;
+  margin-bottom: 0px;
+}
+
+.text,
+dd {
+  margin: 0 auto;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  padding: 0 16px;
+}
+
+#paragraph-intro {
+  margin-top: 2rem;
+}
+
+.emphasis {
+  padding-top: 0;
+  margin-right: 12px;
+  line-height: 0.83;
+  font-size: 3.9rem;
+  float: left;
+  position: relative;
+  display: block;
+  box-sizing: inherit;
+}
+
+#img-musashi {
+  margin: 0 auto;
+  width: 670px;
+}
