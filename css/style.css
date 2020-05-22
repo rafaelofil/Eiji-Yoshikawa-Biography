@@ -49,6 +49,29 @@ main {
 
 .img-principal {
   height: 100vh;
+  animation: slideRight 2s forwards;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 #img-principal {
@@ -78,10 +101,13 @@ main {
   margin-right: 50px;
   border-color: #707070;
   border: solid;
+  box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
+  animation: slideLeft 2s forwards;
 }
 
 #header {
   align-self: center;
+  animation: slideLeft 2s forwards;
 }
 
 #header h1 {
@@ -105,7 +131,12 @@ main {
 
 /* Text parte 1 */
 p {
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
+}
+
+dt {
+  padding: 0 16px;
+  margin-bottom: 0px;
 }
 
 .text,
@@ -117,12 +148,12 @@ dd {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 1.3rem;
-  line-height: 2.1rem;
+  line-height: 1.8rem;
   padding: 0 16px;
 }
 
 #paragraph-intro {
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 .emphasis {
@@ -197,8 +228,8 @@ footer {
   font-size: 2rem;
   font-style: italic;
   font-weight: normal;
-  margin-bottom: 0px;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .line-separator {
@@ -218,11 +249,15 @@ footer {
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
-  max-width: 665px;
-  margin-bottom: 10px;
+  max-width: 680px;
   cursor: pointer;
   align-content: center;
 }
+
+#open-dt {
+  margin-top: 1rem;
+}
+
 @media only screen and (min-width: 788px) and (max-width: 982px) {
   /* Principal Page */
   main {
@@ -297,15 +332,46 @@ footer {
     font-style: italic;
   }
   /* Text */
+
+  .emphasis {
+    font-size: 3.2rem;
+  }
+
   .text,
   dd {
-    font-size: 1.3rem;
-    line-height: 2.1rem;
+    font-size: 1.15rem;
+    line-height: 1.6rem;
+    margin-bottom: 0.5rem;
   }
 
   .line-separator {
     margin-top: 5px;
     margin-bottom: 30px;
     max-width: 80px;
+  }
+
+  #open-dt {
+    margin-top: 0.5rem;
+  }
+
+  /* Accordion-List */
+
+  .accordion-list h2 {
+    font-size: 1.5rem;
+  }
+
+  .accordion-list dt {
+    font-size: 1.15rem;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      max-height: 0;
+    }
+    to {
+      max-height: 1100px;
+      opacity: 1;
+    }
   }
 }
