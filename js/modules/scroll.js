@@ -16,6 +16,10 @@ export default function initScroll() {
     const mainTop = main.getBoundingClientRect().top;
     const mainBottom = main.getBoundingClientRect().bottom;
 
+    if (mainBottom < 0) {
+      scrollToDown = true;
+    }
+
     if (mainTop < 0 && !scrollToDown) {
       scrollToIntro();
     } else if (mainBottom > 0 && scrollToDown) {
