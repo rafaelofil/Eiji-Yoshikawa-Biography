@@ -156,9 +156,6 @@ main {
   margin-left: 0.5rem; }
 
 /* Text parte 1 */
-.portuguese {
-  display: none; }
-
 p {
   margin-bottom: 1rem; }
 
@@ -275,7 +272,7 @@ footer {
   cursor: pointer;
   align-content: center; }
 
-#open-dt {
+.open-dt {
   margin-top: 1rem; }
 
 [data-anime="scroll"] {

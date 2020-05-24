@@ -5,9 +5,12 @@ export default function initAccordion() {
 
   if (accordionList.length) {
     const activeClass = "active";
+    const firstAccordion = document.querySelectorAll(".open-dt");
 
-    accordionList[0].classList.add(activeClass);
-    accordionList[0].nextElementSibling.classList.add(activeClass);
+    firstAccordion.forEach((item) => item.classList.add(activeClass));
+    firstAccordion.forEach((item) =>
+      item.nextElementSibling.classList.add(activeClass)
+    );
 
     function activeAccordion() {
       this.classList.toggle(activeClass);

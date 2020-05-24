@@ -10,13 +10,9 @@ export default function initModal() {
   const english = document.querySelectorAll(".english");
   const portuguese = document.querySelectorAll(".portuguese");
 
-  function openModal() {
-    containerModal.classList.add("active");
-  }
+  const openModal = () => containerModal.classList.add("active");
 
-  function closeModal(event) {
-    containerModal.classList.remove("active");
-  }
+  const closeModal = () => containerModal.classList.remove("active");
 
   function clickOutModal(event) {
     if (event.target === this) closeModal();
@@ -24,23 +20,15 @@ export default function initModal() {
 
   function englishActive(event) {
     event.preventDefault();
-    english.forEach((item) => {
-      item.classList.add("active");
-    });
-    portuguese.forEach((item) => {
-      item.classList.remove("active");
-    });
+    english.forEach((item) => item.classList.add("active"));
+    portuguese.forEach((item) => item.classList.remove("active"));
     closeModal();
   }
 
   function portugueseActive(event) {
     event.preventDefault();
-    portuguese.forEach((item) => {
-      item.classList.add("active");
-    });
-    english.forEach((item) => {
-      item.classList.remove("active");
-    });
+    portuguese.forEach((item) => item.classList.add("active"));
+    english.forEach((item) => item.classList.remove("active"));
     closeModal();
   }
 
@@ -48,10 +36,10 @@ export default function initModal() {
   buttonClose.addEventListener("click", closeModal);
   containerModal.addEventListener("click", clickOutModal);
 
-  englishOption.forEach((item) => {
-    item.addEventListener("click", englishActive);
-  });
-  portugueseOption.forEach((item) => {
-    item.addEventListener("click", portugueseActive);
-  });
+  englishOption.forEach((item) =>
+    item.addEventListener("click", englishActive)
+  );
+  portugueseOption.forEach((item) =>
+    item.addEventListener("click", portugueseActive)
+  );
 }
