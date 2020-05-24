@@ -1,9 +1,18 @@
 /* Text parte 1 */
+// .english {
+//   display: none;
+// }
+
+.portuguese {
+  display: none;
+}
+
 p {
   margin-bottom: 1rem;
 }
 
 dt {
+  text-transform: uppercase;
   padding: 0 16px;
   margin-bottom: 0px;
 }
@@ -39,4 +48,20 @@ dd {
 #img-musashi {
   margin: 0 auto;
   width: 670px;
+}
+
+.english {
+  display: none;
+}
+
+.portuguese {
+  display: none;
+}
+
+.english.active {
+  display: block;
+}
+
+.portuguese.active {
+  display: block;
 }
