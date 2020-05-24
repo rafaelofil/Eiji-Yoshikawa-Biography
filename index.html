@@ -18,7 +18,7 @@
         <button id="scroll-smooth">
           <img src="img/scrollclick.svg" alt="Down Scroll Button"/>
         </button>
-        <button id="cc-button">CC</button>
+        <button id="cc-button" data-modal="open">CC</button>
 
           <div id="header">
             <div class="english active">
@@ -177,12 +177,12 @@
     <div class="modal">
       <button data-modal="close" class="close">X</button>
       <div class="english active">
-        <p><span>✓</span>English</p>
-        <p>Portuguese</p>
+        <a class="active" data-modal="english">English</a>
+        <a data-modal="portuguese">Portuguese</a>
       </div>
       <div class="portuguese">
-        <p>Inglês</p>
-        <p><span>✓</span>Português</p>
+        <a data-modal="english">Inglês</a>
+        <a class="active" data-modal="portuguese">Português</a>
       </div>
     </div>
   </section>

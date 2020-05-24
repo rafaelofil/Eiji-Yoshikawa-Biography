@@ -1,6 +1,5 @@
 @charset "UTF-8";
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body,
@@ -37,55 +36,27 @@ button {
   outline: none; }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
 
 .img-principal {
   height: 100vh;
-  -webkit-animation: slideRight 2s forwards;
   animation: slideRight 2s forwards; }
-
-@-webkit-keyframes slideRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-30px, 0, 0);
-    transform: translate3d(-30px, 0, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
 
 @keyframes slideRight {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-30px, 0, 0);
     transform: translate3d(-30px, 0, 0); }
   to {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-
-@-webkit-keyframes slideLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(30px, 0, 0);
-    transform: translate3d(30px, 0, 0);
-    behavior: "smooth"; }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
 
 @keyframes slideLeft {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(30px, 0, 0);
     transform: translate3d(30px, 0, 0);
     behavior: "smooth"; }
   to {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
 
 #img-principal {
@@ -95,15 +66,12 @@ main {
 #scroll-smooth {
   cursor: pointer;
   position: absolute;
-  -ms-flex-item-align: end;
   align-self: flex-end;
   left: 50%;
   margin-right: -50%;
   margin-top: 1px; }
 
 #cc-button {
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
   order: 1;
   cursor: pointer;
   width: 48px;
@@ -116,15 +84,11 @@ main {
   margin-right: 50px;
   border-color: #707070;
   border: solid;
-  -webkit-box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
   box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
-  -webkit-animation: slideLeft 2s forwards;
   animation: slideLeft 2s forwards; }
 
 #header {
-  -ms-flex-item-align: center;
   align-self: center;
-  -webkit-animation: slideLeft 2s forwards;
   animation: slideLeft 2s forwards; }
 
 #header h1 {
@@ -152,17 +116,15 @@ main {
   left: 0;
   z-index: 2000;
   display: none;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center; }
+
+.modal-container.active {
+  display: flex; }
 
 .modal {
   background: #454545;
   padding: 40px;
-  -webkit-box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
   box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
   position: relative;
   border-radius: 8px; }
@@ -175,16 +137,23 @@ main {
   right: -20px;
   position: absolute;
   background: white;
-  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3); }
 
-.modal p {
+.modal a {
+  display: block;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+  font-size: 1.3rem;
   margin-top: 1rem;
   margin-left: 1.5rem;
   margin-bottom: 1rem;
-  margin-right: 1.5rem; }
+  margin-right: 1.5rem;
+  cursor: pointer; }
+
+[data-modal="english"].active::after,
+[data-modal="portuguese"].active::after {
+  content: "✓";
+  margin-left: 0.5rem; }
 
 /* Text parte 1 */
 .portuguese {
@@ -202,12 +171,7 @@ dt {
 dd {
   margin: 0 auto;
   max-width: 680px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -226,7 +190,6 @@ dd {
   float: left;
   position: relative;
   display: block;
-  -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
 #img-musashi {
@@ -246,15 +209,8 @@ dd {
   display: block; }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center; }
 
 #img-github {
@@ -282,16 +238,7 @@ footer {
 
 [data-anime="accordion"] dd.active {
   display: block;
-  -webkit-animation: slideDown 0.5s forwards;
   animation: slideDown 0.5s forwards; }
-
-@-webkit-keyframes slideDown {
-  from {
-    opacity: 0;
-    max-height: 0; }
-  to {
-    max-height: 650px;
-    opacity: 1; } }
 
 @keyframes slideDown {
   from {
@@ -326,7 +273,6 @@ footer {
   font-size: 1.2rem;
   max-width: 680px;
   cursor: pointer;
-  -ms-flex-line-pack: center;
   align-content: center; }
 
 #open-dt {
@@ -334,27 +280,19 @@ footer {
 
 [data-anime="scroll"] {
   opacity: 0;
-  -webkit-transform: translate3d(-30px, 0, 0);
   transform: translate3d(-30px, 0, 0);
-  -webkit-transition: 1s;
   transition: 1s; }
 
 [data-anime="scroll"].active {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
 @media only screen and (min-width: 788px) and (max-width: 982px) {
   /* Principal Page */
   main {
     height: 100vh;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-item-align: center;
     align-self: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center; }
   .img-principal {
     height: 100vh;
@@ -362,10 +300,7 @@ footer {
   #img-principal {
     display: none; }
   #cc-button {
-    -webkit-box-ordinal-group: 1;
-    -ms-flex-order: 0;
     order: 0;
-    -ms-flex-item-align: start;
     align-self: start;
     margin-right: -0px;
     padding: 0; } }
@@ -374,13 +309,8 @@ footer {
   /* Principal Page */
   main {
     height: 100vh;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-item-align: center;
     align-self: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center; }
   .img-principal {
     height: 100vh;
@@ -388,10 +318,7 @@ footer {
   #img-principal {
     display: none; }
   #cc-button {
-    -webkit-box-ordinal-group: 1;
-    -ms-flex-order: 0;
     order: 0;
-    -ms-flex-item-align: start;
     align-self: start;
     padding: 0;
     margin-top: 140px;
@@ -429,13 +356,6 @@ footer {
     font-size: 1.5rem; }
   .accordion-list dt {
     font-size: 1.15rem; }
-  @-webkit-keyframes slideDown {
-    from {
-      opacity: 0;
-      max-height: 0; }
-    to {
-      max-height: 1100px;
-      opacity: 1; } }
   @keyframes slideDown {
     from {
       opacity: 0;
