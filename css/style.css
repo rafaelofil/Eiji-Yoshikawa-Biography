@@ -42,21 +42,13 @@ main {
   height: 100vh;
   animation: slideRight 2s forwards; }
 
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    transform: translate3d(-30px, 0, 0); }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0); } }
-
 .cc-button {
   order: 1;
   cursor: pointer;
   width: 48px;
   height: 36px;
   background-color: white;
-  font-size: 18px;
+  font-size: 1.15rem;
   font-family: Arial, Helvetica, sans-serif;
   font-style: bold;
   margin-top: 150px;
@@ -67,8 +59,7 @@ main {
   animation: slideLeft 2s forwards; }
 
 #principal {
-  height: 100%;
-  display: block; }
+  height: 100%; }
 
 #scroll-smooth {
   cursor: pointer;
@@ -103,6 +94,14 @@ main {
     opacity: 0;
     transform: translate3d(30px, 0, 0);
     behavior: "smooth"; }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0); }
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0); } }
@@ -303,11 +302,24 @@ footer {
 @media only screen and (max-width: 787px) {
   main {
     height: 100vh;
-    align-items: center;
-    align-self: center;
-    justify-content: center; }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  #scroll-smooth {
+    order: 2;
+    position: static;
+    align-items: none;
+    justify-content: none;
+    align-content: none;
+    align-self: flex-end;
+    margin: 0 auto;
+    left: 0%;
+    margin-right: 40%;
+    margin-top: 0px; }
+  #principal {
+    height: 0%; }
   #header {
-    margin: 0 auto; }
+    padding: 0 24px; }
   #header h1 {
     font-size: 3rem;
     line-height: 3rem; }
@@ -320,17 +332,15 @@ footer {
     font-size: 2rem;
     font-style: italic; }
   .img-principal {
-    height: 100vh;
+    height: 0vh;
     display: none; }
   .principal {
     display: none; }
   .cc-button {
     order: 0;
-    align-self: start;
-    padding: 0;
-    margin-top: 140px;
-    margin-left: 20px;
-    margin-right: -20px; }
+    margin-top: 2rem;
+    margin-right: 0px;
+    margin-left: 2rem; }
   .emphasis {
     font-size: 3.2rem; }
   .text,

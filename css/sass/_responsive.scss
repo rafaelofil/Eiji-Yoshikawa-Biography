@@ -26,13 +26,30 @@
 @media only screen and (max-width: 787px) {
   main {
     height: 100vh;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #scroll-smooth {
+    order: 2;
+    position: static;
+    align-items: none;
+    justify-content: none;
+    align-content: none;
+    align-self: flex-end;
+    margin: 0 auto;
+    left: 0%;
+    margin-right: 40%;
+    margin-top: 0px;
+  }
+
+  #principal {
+    height: 0%;
   }
 
   #header {
-    margin: 0 auto;
+    padding: 0 24px;
   }
 
   #header h1 {
@@ -53,7 +70,7 @@
   }
 
   .img-principal {
-    height: 100vh;
+    height: 0vh;
     display: none;
   }
 
@@ -63,11 +80,9 @@
 
   .cc-button {
     order: 0;
-    align-self: start;
-    padding: 0;
-    margin-top: 140px;
-    margin-left: 20px;
-    margin-right: -20px;
+    margin-top: 2rem;
+    margin-right: 0px;
+    margin-left: 2rem;
   }
 
   .emphasis {

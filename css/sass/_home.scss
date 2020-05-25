@@ -7,24 +7,13 @@ main {
   animation: slideRight 2s forwards;
 }
 
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    transform: translate3d(-30px, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
 .cc-button {
   order: 1;
   cursor: pointer;
   width: 48px;
   height: 36px;
   background-color: white;
-  font-size: 18px;
+  font-size: 1.15rem;
   font-family: Arial, Helvetica, sans-serif;
   font-style: bold;
   margin-top: 150px;
@@ -37,7 +26,6 @@ main {
 
 #principal {
   height: 100%;
-  display: block;
 }
 
 #scroll-smooth {
@@ -78,6 +66,17 @@ main {
     opacity: 0;
     transform: translate3d(30px, 0, 0);
     behavior: "smooth";
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
   }
   to {
     opacity: 1;
