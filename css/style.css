@@ -301,18 +301,13 @@ footer {
 
 @media only screen and (max-width: 787px) {
   main {
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
   #scroll-smooth {
     order: 2;
     position: static;
-    align-items: none;
-    justify-content: none;
-    align-content: none;
-    align-self: flex-end;
-    margin: 0 auto;
     left: 0%;
     margin-right: 40%;
     margin-top: 0px; }
