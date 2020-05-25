@@ -18,33 +18,7 @@ main {
   }
 }
 
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-    transform: translate3d(30px, 0, 0);
-    behavior: "smooth";
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-#img-principal {
-  height: 100%;
-  display: block;
-}
-
-#scroll-smooth {
-  cursor: pointer;
-  position: absolute;
-  align-self: flex-end;
-  left: 50%;
-  margin-right: -50%;
-  margin-top: 1px;
-}
-
-#cc-button {
+.cc-button {
   order: 1;
   cursor: pointer;
   width: 48px;
@@ -59,6 +33,20 @@ main {
   border: solid;
   box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
   animation: slideLeft 2s forwards;
+}
+
+#principal {
+  height: 100%;
+  display: block;
+}
+
+#scroll-smooth {
+  cursor: pointer;
+  position: absolute;
+  align-self: flex-end;
+  left: 50%;
+  margin-right: -50%;
+  margin-top: 1px;
 }
 
 #header {
@@ -83,4 +71,16 @@ main {
 #header quote {
   font-size: 2rem;
   font-style: italic;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(30px, 0, 0);
+    behavior: "smooth";
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }

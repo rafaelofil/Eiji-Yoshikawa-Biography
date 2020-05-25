@@ -1,3 +1,9 @@
+[data-modal="english"].active::after,
+[data-modal="portuguese"].active::after {
+  content: "✓";
+  margin-left: 0.5rem;
+}
+
 .modal-container {
   height: 100vh;
   width: 100%;
@@ -44,10 +50,4 @@
   margin-bottom: 1rem;
   margin-right: 1.5rem;
   cursor: pointer;
-}
-
-[data-modal="english"].active::after,
-[data-modal="portuguese"].active::after {
-  content: "✓";
-  margin-left: 0.5rem;
 }
