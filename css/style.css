@@ -311,7 +311,8 @@ footer {
     position: static;
     left: 0%;
     margin-right: 30%;
-    margin-top: 0px; }
+    margin-top: 0px;
+    margin-bottom: 1px; }
   #principal {
     height: 0%; }
   #header {
@@ -334,7 +335,7 @@ footer {
     display: none; }
   .cc-button {
     order: 0;
-    border: 4px solid;
+    border: 2px solid;
     margin-top: 2rem;
     margin-right: 0px;
     margin-left: 1rem; }
