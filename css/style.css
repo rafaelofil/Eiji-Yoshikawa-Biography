@@ -302,7 +302,6 @@ footer {
 @media only screen and (max-width: 787px) {
   main {
     height: 100vh;
-    min-height: -webkit-fill-available;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
@@ -311,8 +310,7 @@ footer {
     position: static;
     left: 0%;
     margin-right: 30%;
-    margin-top: 0px;
-    margin-bottom: 1px; }
+    margin-top: 0px; }
   #principal {
     height: 0%; }
   #header {
