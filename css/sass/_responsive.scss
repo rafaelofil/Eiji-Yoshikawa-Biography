@@ -25,6 +25,7 @@
 
 @media only screen and (max-width: 787px) {
   main {
+    min-height: -webkit-fill-available;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -37,7 +38,6 @@
     left: 0%;
     margin-right: 30%;
     margin-top: 0px;
-    margin-bottom: 47px;
   }
 
   #principal {
@@ -76,7 +76,7 @@
 
   .cc-button {
     order: 0;
-    border: 4px solid;
+    border: 2px solid;
     margin-top: 2rem;
     margin-right: 0px;
     margin-left: 1rem;

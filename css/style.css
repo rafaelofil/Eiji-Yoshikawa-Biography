@@ -86,7 +86,7 @@ main {
   margin-bottom: 40px; }
 
 #header quote {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: italic; }
 
 @keyframes slideLeft {
@@ -301,6 +301,7 @@ footer {
 
 @media only screen and (max-width: 787px) {
   main {
+    min-height: -webkit-fill-available;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -310,8 +311,7 @@ footer {
     position: static;
     left: 0%;
     margin-right: 30%;
-    margin-top: 0px;
-    margin-bottom: 47px; }
+    margin-top: 0px; }
   #principal {
     height: 0%; }
   #header {
