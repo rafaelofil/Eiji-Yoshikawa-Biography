@@ -31,6 +31,10 @@
     justify-content: space-between;
   }
 
+  #img-github {
+    cursor: none;
+  }
+
   #scroll-smooth {
     order: 2;
     position: static;
@@ -80,6 +84,7 @@
     margin-top: 2rem;
     margin-right: 0px;
     margin-left: 1rem;
+    cursor: none;
   }
 
   .emphasis {
@@ -88,6 +93,7 @@
 
   .text,
   dd {
+    cursor: none;
     font-size: 1.15rem;
     line-height: 1.6rem;
     margin-bottom: 0.5rem;

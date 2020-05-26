@@ -312,6 +312,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+  #img-github {
+    cursor: none; }
   #scroll-smooth {
     order: 2;
     position: static;
@@ -344,11 +346,13 @@ footer {
     border: 2px solid;
     margin-top: 2rem;
     margin-right: 0px;
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    cursor: none; }
   .emphasis {
     font-size: 3.2rem; }
   .text,
   dd {
+    cursor: none;
     font-size: 1.15rem;
     line-height: 1.6rem;
     margin-bottom: 0.5rem; }
