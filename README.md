@@ -14,6 +14,8 @@ This website was create with purpose to improve my skills in front-end, mainly i
 Another purpose is to build my portfolio with this first project and introducing myself, taking the next level in say "Hello World".
 Beyond the last objectives cited before, the principal is to do something that I like and show the world cool things as the great history of author japanese, Yoshikawa.
 
+I included two language in this site making it more acessible. 
+
 ## Technologies
 Project is created with:
 
