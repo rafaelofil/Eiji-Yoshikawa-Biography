@@ -48,7 +48,8 @@
     height: 0%;
   }
 
-  #header {
+  #header,
+  .accordion-list h2 {
     padding: 0 24px;
   }
 
@@ -99,23 +100,30 @@
     margin-bottom: 0.5rem;
   }
 
-  .line-separator {
-    margin-top: 5px;
-    margin-bottom: 30px;
-    max-width: 80px;
-  }
-
   .open-dt {
     margin-top: 0.5rem;
   }
 
+  .accordion-list {
+    margin-top: 0pz;
+  }
+
   .accordion-list h2 {
-    font-size: 1.5rem;
+    text-align: center;
   }
 
   .accordion-list dt {
     font-size: 1.15rem;
     cursor: none;
+  }
+
+  .accordion-list h2 {
+    display: flex;
+  }
+
+  .accordion-list h2::after {
+    max-width: 80px;
+    margin-left: 40%;
   }
 
   @keyframes slideDown {

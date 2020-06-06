@@ -242,21 +242,27 @@ footer {
   display: block;
   animation: slideDown 0.5s forwards; }
 
+.accordion-list {
+  margin-top: 1rem; }
+
 .accordion-list h2 {
+  display: flex;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-style: italic;
   font-weight: normal;
-  text-align: center;
-  margin-top: 1rem; }
+  max-width: 640px;
+  margin: 0 auto; }
 
-.line-separator {
+.accordion-list h2::after {
+  content: "";
   height: 1px;
   background: #000000;
   border-bottom: 2px solid #313030;
-  max-width: 180px;
-  margin: 0 auto;
-  border-radius: 4px; }
+  max-width: 320px;
+  border-radius: 16px;
+  margin-bottom: 1rem; }
 
 .accordion-list hr {
   max-width: 640px; }
@@ -323,7 +329,8 @@ footer {
     margin-bottom: 56px; }
   #principal {
     height: 0%; }
-  #header {
+  #header,
+  .accordion-list h2 {
     padding: 0 24px; }
   #header h1 {
     font-size: 3rem;
@@ -356,17 +363,20 @@ footer {
     font-size: 1.15rem;
     line-height: 1.6rem;
     margin-bottom: 0.5rem; }
-  .line-separator {
-    margin-top: 5px;
-    margin-bottom: 30px;
-    max-width: 80px; }
   .open-dt {
     margin-top: 0.5rem; }
+  .accordion-list {
+    margin-top: 0pz; }
   .accordion-list h2 {
-    font-size: 1.5rem; }
+    text-align: center; }
   .accordion-list dt {
     font-size: 1.15rem;
     cursor: none; }
+  .accordion-list h2 {
+    display: flex; }
+  .accordion-list h2::after {
+    max-width: 80px;
+    margin-left: 40%; }
   @keyframes slideDown {
     from {
       opacity: 0;
