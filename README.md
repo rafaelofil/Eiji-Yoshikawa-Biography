@@ -55,4 +55,7 @@ Project is: finished, but if I have any inspiration I will add.
 
 Any feedback is welcome.
 
-I hope you enjoy ;)
+Made by <b>Rafael Filho</b>
+
+<hr>
+<p align="center"> I hope you enjoy 😎</p>
