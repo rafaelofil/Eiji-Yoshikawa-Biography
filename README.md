@@ -34,9 +34,7 @@ $ npm install --save-dev gulp-watch
 ```
 The script of gulp is include in folders with name gulpfile.js.
 
-Or you can acess the link and check the website:
-
-https://rafaelofil.github.io/Eiji-Yoshikawa-Biography/
+Or you can acess the link and check the website: https://rafaelofil.github.io/Eiji-Yoshikawa-Biography/
 
 ## Fonts
 
