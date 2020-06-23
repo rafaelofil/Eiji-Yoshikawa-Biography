@@ -1,9 +1,11 @@
 # Eiji Yoshikawa Biography
 Website created to honor the author Eiji Yoshikawa.
 
-<a href="https://rafaelofil.github.io/Eiji-Yoshikawa-Biography/">
-  <img align="center" src="./img/Home_Eiji.jpg" />
-</a>
+<p align="center">
+  <a href="https://rafaelofil.github.io/Eiji-Yoshikawa-Biography/">
+    <img src="./img/Home_Eiji.jpg" />
+  </a>
+</p>
 
 ## Table of contents
 * [General info](#general-info)
